@@ -12,6 +12,16 @@ public class Main {
         JLabel label1 = new JLabel();
         button1.setSize(200, 200);
 
+        ActionListener actionListener = new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                if (button1.equals(e.getSource())) {
+                    System.out.println("TEST");
+                }
+            }
+
+        };
+
 
         JFrame frm = new JFrame();
 
@@ -22,7 +32,9 @@ public class Main {
         button1.setBackground(Color.blue);
         button1.setForeground(Color.RED);
         frm.add(button1);
+        button1.addActionListener(actionListener);
 
+        // 버튼 상호작용
 
 
     }
@@ -30,10 +42,7 @@ public class Main {
 
 
 
-
-
 }
-
 
 
 
