@@ -1,17 +1,41 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        JButton button1 = new JButton();
+        JLabel label1 = new JLabel();
+        button1.setSize(200, 200);
+
+
+        JFrame frm = new JFrame();
+
+        // 버튼 만들기
+        button1.setText("Button1");
+        button1.setSize(80, 30);
+        button1.setLocation(60, 30);
+        button1.setBackground(Color.blue);
+        button1.setForeground(Color.RED);
+        frm.add(button1);
+
+
+
     }
+
+
+
+
+
+
 }
+
+
+
+
+
+
